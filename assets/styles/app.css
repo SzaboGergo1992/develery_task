@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color: lightgray;
+}
+
+.navbar {
+    background-color: #4d5154;
+    color: sandybrown;
+}

@@ -2,15 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Develery junior application task{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
         {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>
+    <nav class="navbar">
+        <div class="nav-item ps-3 fw-semibold">
+            <div>Develery</div>
+            <div class="ps-3">application</div>
+        </div>
+        <div class="nav-item me-auto ps-5">
+            <a class="nav-link" href="/home">Home</a>
+        </div>
+        <div class="nav-item pe-5">
+            <a class="nav-link" href="/contact">Kapcsolat</a>
+        </div>
+    </nav>
         {% block body %}{% endblock %}
     </body>
 </html>
